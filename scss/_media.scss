@@ -136,8 +136,10 @@
 }
 @media (max-height: 330px){
     #header-home {
-        .header-content h1{
-    0        font-size: 2rem;          
-        }
+        .header-content 
+        { h1
+            {
+               font-size: 2rem;          
+        }   }
     }
 }
