@@ -1,7 +1,7 @@
-@media (min-width:1024px) 
+@media (min-width:1025px) 
 {#header-home{
     .header-content 
-    {padding-top: 26%;
+    {padding-top: 20rem;
     }
 
   } 
@@ -10,7 +10,7 @@
 { #header-home{
      height: 60vh;
     .header-content 
-    {padding-top: 6vh;
+    {padding-top: 30%;
         max-height: 100%;
     }
     .container {
@@ -28,7 +28,7 @@
     }
 
 // Tablets & smaller
-@media (max-width:800px){
+@media (min-width:501px) and (max-width:800px){
     #header-home{
         height: 30rem;
       .header-content 
@@ -36,7 +36,7 @@
           }
         
     &:before {
-        height: 10rem;
+        height: 30rem;
     }
     }    
 }
@@ -46,6 +46,7 @@
     #main-nav{        
         flex-direction: column;
         align-items: center;
+        
         li {
             padding: 1rem;
         }  
@@ -63,6 +64,11 @@
             .header-content {
                 display: none;
             } 
+
+        &::before{
+            height: 10rem;
+        }
+
         }
         &-inner{
             height: 10rem;
