@@ -215,10 +215,20 @@ a {
     border-color: #ffbc00; }
 
 #header-home {
-  background: url("../img/showcase1.jpg") no-repeat center center/cover;
+  background: url("../img/Foto.jpg") no-repeat center center/contain;
   max-height: 100%;
   height: 100vh;
   color: #fff; }
+  #header-home:before {
+    content: "";
+    background: url("../img/beachsunshine.jpg") no-repeat center center/cover;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1; }
   #header-home .header-content {
     text-align: center;
     padding: 20% 0 0 0; }
@@ -227,7 +237,7 @@ a {
       line-height: 1.2; }
 
 #header-inner {
-  background: url("../img/showcase1.jpg") no-repeat 20% 30%/cover;
+  background: url("../img/beachsunshine.jpg") no-repeat 20% 30%/cover;
   height: 5.5rem;
   border-bottom: 3px solid #ffbc00; }
 
