@@ -118,6 +118,10 @@ input[class^='btn-']:hover {
   .item:hover .item-text {
     opacity: 1;
     transform: translateY(0); }
+  .item a {
+    text-transform: none; }
+    .item a p {
+      margin-top: 10px; }
   .item-image {
     height: auto;
     display: block;
@@ -498,6 +502,8 @@ a {
       padding-bottom: 0; }
   #contact-c h1 {
     font-size: 2rem; }
+  .item a p {
+    margin-top: 5px; }
   #main-footer {
     height: 7rem; }
     #main-footer .footer-content {
