@@ -123,7 +123,7 @@ input[class^='btn-']:hover {
     .item a p {
       margin-top: 10px; }
   .item-image {
-    height: auto;
+    height: 100%;
     display: block;
     transform: translateZ(0);
     transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1); }
@@ -137,7 +137,7 @@ input[class^='btn-']:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     line-height: 0; }
   .item-text {
     position: absolute;
@@ -256,7 +256,7 @@ a {
 
 #home-b .stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); }
+  grid-template-columns: repeat(3, 1fr); }
   #home-b .stats li {
     line-height: 2; }
     #home-b .stats li.stats-titel {
@@ -314,6 +314,9 @@ a {
   display: grid;
   grid-template-areas: 'bioimage bio bio'  'aw1 aw2 aw3';
   grid-gap: 1.2rem; }
+  #about-a .about-info p {
+    text-align: justify;
+    text-justify: inter-word; }
 
 #about-a .bio-a image {
   grid-area: bioimage; }
@@ -322,21 +325,6 @@ a {
   grid-area: bio;
   border-left: 3px solid #ffbc00;
   padding: 0.8rem; }
-
-#about-a .award1 {
-  grid-area: aw1; }
-
-#about-a .award2 {
-  grid-area: aw2; }
-
-#about-a .award3 {
-  grid-area: aw3; }
-
-#about-a .award-1 .fas,
-#about-a .award-2 .fas,
-#about-a .award-3 .fas {
-  color: #ffbc00 !important;
-  margin: 1rem; }
 
 #about-b .progress {
   overflow: hidden;
@@ -369,7 +357,10 @@ a {
   #about-d .testimonials p {
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 0.5rem; }
+    padding: 0.5rem;
+    height: 150px;
+    text-align: justify;
+    overflow: auto; }
   #about-d .testimonials img {
     height: 50px;
     width: 50px;

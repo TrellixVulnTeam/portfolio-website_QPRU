@@ -124,7 +124,7 @@ a{
 &-b{
   .stats{
      display: grid;
-       grid-template-columns: repeat(4, 1fr);
+       grid-template-columns: repeat(3, 1fr);
 
         li{
            line-height: 2;
@@ -209,6 +209,11 @@ a{
          'bioimage bio bio' 
          'aw1 aw2 aw3';
           grid-gap: 1.2rem;
+
+             p {
+            text-align: justify;
+            text-justify: inter-word;              
+          }
         }
 
         // Grid Area
@@ -219,27 +224,7 @@ a{
             grid-area:bio;
             border-left: 3px solid $main-color;
             padding: 0.8rem;
-        }
-
-        .award1{
-            grid-area:aw1;
-
-        }
-        .award2{
-            grid-area:aw2;
-
-        }
-        .award3{
-            grid-area:aw3;
-
-        }
-
-        .award-1 .fas,
-        .award-2 .fas,
-        .award-3 .fas{
-            color: $main-color !important;
-            margin: 1rem;
-        }
+        }     
 
     }
     // About B
@@ -289,7 +274,10 @@ a{
             p{
                 border: 1px solid $medium-color;
                 border-radius: 5px;
-                padding: 0.5rem;
+                padding: 0.5rem;                
+                height: 150px;
+                text-align: justify;
+                overflow: auto;
             }
 
             img{
