@@ -199,6 +199,8 @@ img {
   display: flex;
   justify-content: space-between;
   padding-top: 1rem; }
+  #main-nav li {
+    background-color: rgba(100, 100, 100, 0.6); }
 
 ul {
   display: flex; }
@@ -219,14 +221,14 @@ a {
     border-color: #ffbc00; }
 
 #header-home {
-  background: url("../img/Foto.jpg") no-repeat center center/contain;
+  background: url("../img/Homepagesphoto.jpg") no-repeat center center/contain;
   max-height: 100%;
   height: 100vh;
   color: #fff; }
   #header-home:before {
     content: "";
-    background: url("../img/beachsunshine.jpg") no-repeat center center/cover;
-    opacity: 0.4;
+    background: url("../img/pexels-pixabay-247791.jpg") no-repeat center center/cover;
+    opacity: 0.6;
     position: absolute;
     top: 0;
     left: 0;
@@ -241,7 +243,7 @@ a {
       line-height: 1.2; }
 
 #header-inner {
-  background: url("../img/beachsunshine.jpg") no-repeat 20% 30%/cover;
+  background: url("../img/pexels-pixabay-247791.jpg") no-repeat 20% 30%/cover;
   height: 5.5rem;
   border-bottom: 3px solid #ffbc00; }
 
@@ -440,7 +442,9 @@ a {
   #header-home {
     height: 30rem; }
     #header-home .header-content {
-      padding-top: 5rem; }
+      padding-top: 7rem; }
+      #header-home .header-content h1 {
+        font-size: 2rem; }
     #header-home:before {
       height: 30rem; } }
 
@@ -461,7 +465,8 @@ a {
     #header-home::before {
       height: 10rem; }
   #header-inner {
-    height: 10rem; }
+    height: 10rem;
+    opacity: 0.8; }
   #home-a .specials,
   #home-b .stats,
   #home-c .process,

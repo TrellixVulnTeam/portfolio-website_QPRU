@@ -32,7 +32,10 @@
     #header-home{
         height: 30rem;
       .header-content 
-          {padding-top: 5rem;
+          {padding-top: 7rem;
+            h1{
+                font-size: 2rem;
+            }
           }
         
     &:before {
@@ -67,12 +70,15 @@
 
         &::before{
             height: 10rem;
+            
         }
 
         }
         &-inner{
             height: 10rem;
+            opacity: 0.8;
         }                
+        
     }
 
     // Stack Grid Columns
