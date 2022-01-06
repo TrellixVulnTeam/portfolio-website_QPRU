@@ -12,17 +12,22 @@
     border: none;
     cursor: pointer;
 
+
 }
 .btn {
     &-main {
         @extend %btn-shared;
         color: #333;
         background-color: $main-color;
+        border-radius: 5px;
+       
+
     }
     &-light {
         @extend %btn-shared;
         color: #333;
         background-color: $light-color;
+        border-radius: 5px;
     }
     &-dark {
         @extend %btn-shared;

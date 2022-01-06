@@ -13,11 +13,13 @@
 
 .btn-main {
   color: #333;
-  background-color: #ffbc00; }
+  background-color: #ffbc00;
+  border-radius: 5px; }
 
 .btn-light {
   color: #333;
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  border-radius: 5px; }
 
 .btn-dark {
   color: #f4f4f4;
@@ -241,6 +243,13 @@ a {
     #header-home .header-content h1 {
       font-size: 4rem;
       line-height: 1.2; }
+    #header-home .header-content .btn-main {
+      border-radius: 5px;
+      box-shadow: inset 2px 2px 5px #b15601;
+      color: #f4f4f4;
+      font-weight: 200; }
+      #header-home .header-content .btn-main:hover {
+        opacity: 0.7; }
 
 #header-inner {
   background: url("../img/pexels-pixabay-blured.jpg") no-repeat 20% 30%/cover;
