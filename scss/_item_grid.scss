@@ -1,14 +1,18 @@
 .items {
+    
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-
+    &.hide {
+        z-index: -1;
+    }
 }
 
 .item{
     position: relative;
     background: $main-color;
     overflow: hidden;
+    
 
     &::after {
         content:'';
@@ -25,6 +29,7 @@
     }
     // Bring in main color overlay
     &:hover:after 
+    
     { transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
     }
     // Scale imag on hover
